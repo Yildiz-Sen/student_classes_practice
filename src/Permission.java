@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Permission {
 
     //COMPLETE THIS CLASS BEFORE TEST CLASS
@@ -14,6 +16,13 @@ public class Permission {
 
 
 
+    public static void checkAge(int age){
+        if(age > 20);
+        else throw new RuntimeException(age + " is not allowed!");
+    }
+
+
+
     /*
     HERE!
     Create a method checkClassName
@@ -22,4 +31,10 @@ public class Permission {
     In case the className is not Math or Science, then method will throw an RuntimeException with message "{className} is not allowed!"
     If the className is Math or Science, then it will do nothing
      */
-}
+
+    public static void checkClassName(String className){
+        if(className.equalsIgnoreCase("math") || className.equalsIgnoreCase("science"));
+          else throw new RuntimeException(className + " is not allowed!");
+        }
+
+    }
